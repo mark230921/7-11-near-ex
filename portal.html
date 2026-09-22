@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portal</title>
+  <style>
+    body { 
+      font-family: Georgia; 
+      background: #f4f4f9; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh; 
+      margin: 0; 
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .top-image {
+      display: block;
+      margin: 0 auto 15px auto;
+      width: 200px;
+      height: 150px;
+    }
+    .login-card { 
+      margin-top: -15px;
+      background: white; 
+      padding: 30px; 
+      border-radius: 24px; 
+      border: 2px solid #333;
+      box-shadow: 0 8px 0px rgba(0,0,0,0.9); 
+      width: 100%; 
+      max-width: 400px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    button { 
+      width: 50%; 
+      padding: 10px; 
+      background: #fff; 
+      border: 2px solid #333; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      font-weight: bold;
+      box-shadow: 0 3px 0px #333;
+    }
+    button:active { transform: translateY(2px); box-shadow: 0 1px 0px #333; }
+  </style>
+</head>
+<body>
+    <marquee style="font-style:italic;margin-bottom:10px">*This project was only a prototype develop by: Mark Jake*</marquee>
+  <img class="top-image" src="login.png" alt="Login Image">
+  
+  <div class="login-card">
+    <h1>:CHOOSE PORTAL:</h1>
+    
+    <p>STORE PORTAL</p>    
+    <button onclick="handleLogin1()">STORE</button>
+    
+    <br><br>
+    
+    <p>ADMIN PORTAL</p>
+    <button onclick="handleLogin2()">ADMIN</button>
+    
+  </div>
+
+  <script>
+    function handleLogin1() {
+      // Redirects to Store Portal page
+      window.location.href = 'store.html';
+    }
+
+    function handleLogin2() {
+      // Redirects to Admin Portal page
+      window.location.href = 'admin.html';
+    }
+  </script>
+</body>
+</html>
